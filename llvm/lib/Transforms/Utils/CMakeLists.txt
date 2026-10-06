@@ -17,6 +17,9 @@ add_llvm_component_library(LLVMTransformUtils
   CodeExtractor.cpp
   CodeLayout.cpp
   CodeMoverUtils.cpp
+  ConstantFoldingPass.cpp
+  ConstantPropagation.cpp
+  CopyPropagation.cpp
   ControlFlowUtils.cpp
   CtorUtils.cpp
   CountVisits.cpp
@@ -46,6 +49,7 @@ add_llvm_component_library(LLVMTransformUtils
   LCSSA.cpp
   LibCallsShrinkWrap.cpp
   Local.cpp
+  LocalCSE.cpp
   LoopConstrainer.cpp
   LoopPeel.cpp
   LoopRotationUtils.cpp
@@ -85,6 +89,8 @@ add_llvm_component_library(LLVMTransformUtils
   SampleProfileInference.cpp
   SampleProfileLoaderBaseUtil.cpp
   SanitizerStats.cpp
+  SimpleDCE.cpp
+  SimpleInstCombine.cpp
   SimplifyCFG.cpp
   SimplifyIndVar.cpp
   SimplifyLibCalls.cpp
